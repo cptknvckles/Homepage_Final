@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+:root{
+    --green-gray: #9B9F91;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    
+}
+body, html{
+    height: 100%;
+}
+
+#trees{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+   
+}
+
+body{
+    
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--green-gray);
+    background-image: url(media/rainingTreesBetter.mp4);
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+}
+
+
+#linkContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5em;
+    
+}
+
+#linkContainer a {
+    font-family: 'Links';
+    font-size: 28px;
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+#linkContainer a:visited{
+    color: aliceblue;
+}
+
+
+.dateAndTimeContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#clock-container{
+    font-weight: 600;
+    font-size: 42px;
+    color: white;
+    margin-top: 13%;
+    opacity: 0.6;
+    
+    width: fit-content;
+}
+
+#date{
+    padding-bottom: 10px;
+    width: fit-content ;
+   
+    
+}
+
+
+.fa-gradient{
+    background: hsl(11, 0%, 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+
+
+
+.searchBar{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.textIn{
+    border-radius: 4px;
+    padding: 6px 4px 6px 6px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(8px);
+    border: none;
+    width: 280px;
+}
+
+hr{
+    position: relative;
+    background: gold;
+    height: 18px;
+    margin-top: 100px;
+    max-width: 20%;
+    border-radius: 8px;
+}
+
+@font-face {
+    font-family: 'Days';
+    src: url(fonts/Scripto-2OR2v.ttf);
+}
+@font-face {
+    font-family: 'Links';
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+/*background-color: rgba(255, 255, 255, .15);*/
+
+
+  
+  /* define the float animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+#linkForm {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+/* Style for form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for form inputs */
+/* input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+} */
+
+/* Style for the "Save" button */
+#saveLink {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style for the "+" button */
+#addLink {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

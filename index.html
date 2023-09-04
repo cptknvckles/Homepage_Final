@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6bdfe93a49.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>HomePage2</title>
+</head>
+<body>
+    <video autoplay muted loop id="trees">
+        <source src="media/rainingTreesBetter.mp4" type="video/mp4">
+    </video>
+ 
+<!--look into DOM manipulation or the lesson on scrimba about using JS to add stuff for the extension, i think with that i can add a + button to add lists on the go-->
+
+    <div class="dateAndTimeContainer">
+        <div id="clock-container"></div>
+        <div id="date"></div>
+    </div>
+
+    <div class="searchBar">
+        <form action="https://search.brave.com/search">
+        <input class="textIn" type="text" name="q" placeholder="Brave Search">
+        </form>
+    </div>
+    
+    <div id="linkContainer">
+        <!-- Existing links go here -->
+        <a href="https://youtube.com">YouTube</a>
+        <a href="https://chat.openai.com">Aria</a>
+        <a href="http://192.168.1.200">UwUtunu Server</a>
+        <button id="addLink">+</button>
+    </div>
+    
+    <!-- Add a form for customizing new links -->
+    <div id="linkForm" style="display: none;">
+        <label for="urlInput">Link URL:</label>
+        <input type="text" id="urlInput" placeholder="https://example.com">
+        <label for="textInput">Link Text:</label>
+        <input type="text" id="textInput" placeholder="New Link">
+        <button id="saveLink">Save</button>
+    </div>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
+
