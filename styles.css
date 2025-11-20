@@ -14,7 +14,7 @@ body, html{
     height: 100%;
 }
 
-#trees{
+#bg-vid{
     position: fixed;
     right: 0;
     bottom: 0;
@@ -27,7 +27,7 @@ body{
     
     font-family: 'Rubik', sans-serif;
     background-color: var(--green-gray);
-    background-image: url(media/rainingTreesBetter.mp4);
+    /* background-image: url(media/0000-0900.mp4); */
     background-position: center;
     background-repeat: no-repeat;
  
@@ -37,20 +37,42 @@ body{
 #linkContainer{
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
     margin-top: 5em;
-    
+    flex-wrap: wrap;
 }
-
+/* 
 #linkContainer a {
     font-family: 'Links';
     font-size: 28px;
     color: aliceblue;
     text-decoration: none;
     
+} */
+
+/*new styling */
+#linkContainer a,
+#addLink {
+    padding: 12px 18px;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    transition: background .2s;
 }
+
+#linkContainer a:hover,
+#addLink:hover {
+    background-color: rgba(255,255,255,0.25);
+}
+
 #linkContainer a:visited{
     color: aliceblue;
 }
@@ -147,7 +169,47 @@ hr{
     }
   }
 
-#linkForm {
+/* adding new modal CSS 2025*/
+#modal {
+    display: none; 
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#modalContent {
+    background: #ffffffee;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+#modalContent input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+#closeModal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* #linkForm {
     position: relative;
     background-color: #f4f4f4;
     padding: 10px;
@@ -155,13 +217,13 @@ hr{
     border-radius: 5px;
     margin-top: 10px;
     width: fit-content;
-}
+} */
 
 /* Style for form labels */
-label {
+/* label {
     display: block;
     margin-bottom: 5px;
-}
+} */
 
 /* Style for form inputs */
 /* input[type="text"] {
@@ -173,21 +235,23 @@ label {
 } */
 
 /* Style for the "Save" button */
-#saveLink {
+/* #saveLink {
     background-color: #007bff;
     color: white;
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-}
+} */
 
 /* Style for the "+" button */
-#addLink {
+/* #addLink {
     background-color: #007bff;
     color: white;
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-}
+} */
+
+

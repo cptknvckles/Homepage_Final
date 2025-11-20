@@ -13,9 +13,9 @@
 </head>
 <body>
     
-    <!-- <video autoplay muted loop id="trees">
-        <source src="media/springFHD.mp4" type="video/mp4">
-    </video> -->
+    <video autoplay muted loop id="bg-vid">
+        <source src="media/0000-0900.mp4" type="video/mp4">
+    </video>
 
     <div class="dateAndTimeContainer">
         <div id="clock-container"></div>
@@ -34,12 +34,27 @@
     </div>
     
     <!-- Add a form for customizing new links -->
-    <div id="linkForm" style="display: none;">
+    <!-- <div id="linkForm" style="display: none;">
         <label for="urlInput">Link URL:</label>
         <input type="text" id="urlInput" placeholder="https://example.com">
         <label for="textInput">Link Text:</label>
         <input type="text" id="textInput" placeholder="New Link">
         <button id="saveLink">Save</button>
+    </div> -->
+    <!--new updated modal form 2025-->
+    <!-- Modal Background -->
+    <div id="modal">
+        <div id="modalContent">
+            <button id="closeModal">✖</button>
+
+            <label for="urlInput">Link URL:</label>
+            <input type="text" id="urlInput" placeholder="https://example.com">
+
+            <label for="textInput">Link Text:</label>
+            <input type="text" id="textInput" placeholder="My Site">
+
+            <button id="saveLink">Save</button>
+        </div>
     </div>
 
     
