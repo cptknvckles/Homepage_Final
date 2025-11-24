@@ -26,7 +26,7 @@ function createLinkElement(url, text) {
     const link = document.createElement("a");
     link.href = url;
     link.textContent = text;
-    linkContainer.insertBefore(link, addButton);
+    linkContainer.appendChild(link);
 }
 
 // Show modal
